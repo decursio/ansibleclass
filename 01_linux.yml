@@ -1,0 +1,9 @@
+﻿---
+- hosts: linuxservers
+  become: yes
+
+  tasks:
+  - name: Create file
+    file:
+      path: /root/testfile.txt
+      state: touch
