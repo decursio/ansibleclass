@@ -1,0 +1,7 @@
+﻿---
+- hosts: linuxservers
+
+  tasks:
+  - name: Debug Facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
