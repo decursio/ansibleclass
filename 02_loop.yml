@@ -26,6 +26,6 @@
         mode: status
       retries: 300
       delay: 1
-      loop: "{{ download_loop.results }}"
+      loop: "{{download_loop.results }}"
       register: async_loop_jobs
       until: async_loop_jobs.finished
