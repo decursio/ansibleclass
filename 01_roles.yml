@@ -1,0 +1,6 @@
+﻿---
+- hosts: linuxservers
+  become: yes
+
+  roles:
+      - jesperberth.el_httpd
