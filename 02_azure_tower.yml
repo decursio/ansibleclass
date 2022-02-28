@@ -101,6 +101,3 @@
   - name: Show webserver public ip
     debug:
       msg: "{{ webserver_pub_ip.state.ip_address }}"
-
-  - name: Add webserver to ssh known_hosts
-    shell: "ssh-keyscan -t ecdsa {{ webserver_pub_ip.state.ip_address }}  >> /home/{{ user }}/.ssh/known_hosts"
