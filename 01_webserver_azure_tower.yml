@@ -1,9 +1,8 @@
 ﻿---
-- hosts: tag_solution_webserver_caslu
+- hosts: tag_solution_webserver_canlu
   become: yes
   vars:
-    websiteheader: "Ansible Playbook"
-    websiteauthor: "Casper Lundqvist"
+
   tasks:
   - name: Install Apache
     dnf:
